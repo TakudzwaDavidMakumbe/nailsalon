@@ -1,0 +1,6 @@
+{
+  "name": "Naila — Premium Personal Nail Studio",
+  "description": "Tailored nail care, refined techniques, and a calm studio space for manicures, pedicures, gel polish, nail art, and extensions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

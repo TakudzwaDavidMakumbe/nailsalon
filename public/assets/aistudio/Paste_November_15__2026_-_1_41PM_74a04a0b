@@ -1,0 +1,1758 @@
+# MASTER IMPLEMENTATION PROMPT — NAILA PREMIUM NAIL STUDIO WEBSITE
+
+You are an elite senior frontend engineer, award-winning UI/UX designer, creative director, luxury beauty-brand specialist, and advanced web animation developer.
+
+Your task is to recreate the complete NAILA website shown at:
+
+https://naila.framer.media/
+
+Reproduce the website with pixel-perfect visual accuracy, exceptional attention to detail, and production-quality implementation.
+
+The live reference website is the SINGLE SOURCE OF TRUTH for the design system, visual identity, layout, proportions, typography, colors, imagery, spacing, component styling, and overall user experience.
+
+This is a premium personal nail-care studio website.
+
+The design must communicate:
+
+- Elegance.
+- Calmness.
+- Beauty.
+- Personal attention.
+- Premium nail care.
+- Sophisticated simplicity.
+- Cleanliness.
+- Relaxation.
+- Refined craftsmanship.
+
+DO NOT turn this into a generic nail salon template.
+
+DO NOT introduce an unrelated luxury aesthetic.
+
+DO NOT redesign, simplify, modernize, or reinterpret the existing design.
+
+Your task is to reproduce the actual NAILA website and extend it into a complete, professionally functional nail studio website.
+
+Study the reference website carefully before implementing anything.
+
+Pay particular attention to its actual section arrangements, image compositions, typography, whitespace, image proportions, and subtle visual details.
+
+Follow every instruction below with extreme precision.
+
+====================================================
+
+# 1. GENERAL IMPLEMENTATION RULES
+
+====================================================
+
+- Use the live NAILA website as the primary visual reference.
+- Recreate the complete homepage from top to bottom.
+- Preserve the minimalist beauty-studio aesthetic.
+- Maintain the warm, soft, neutral color palette.
+- Preserve the original typography hierarchy.
+- Reproduce the hero section and its photographic composition.
+- Reproduce the six service cards.
+- Reproduce the editorial nail-art portfolio gallery.
+- Reproduce the three-part Why Choose Us section.
+- Reproduce the client testimonials.
+- Reproduce the FAQ section.
+- Reproduce the final appointment-booking CTA.
+- Reproduce the minimalist footer.
+- Maintain consistent spacing and alignment across all sections.
+
+IMPORTANT:
+
+The original design is intentionally minimal.
+
+Do not confuse minimalism with missing content.
+
+Every section must feel carefully composed, visually balanced, and professionally finished.
+
+Avoid adding unnecessary decorative elements, excessive animations, oversized gradients, heavy shadows, or unrelated UI components.
+
+The website should feel like an established boutique nail studio with a refined digital presence.
+
+====================================================
+
+# 2. TECHNOLOGY STACK
+
+====================================================
+
+Use:
+
+- Next.js with App Router.
+- React.js.
+- JavaScript / JSX.
+- Tailwind CSS.
+- Lucide React for icons where needed.
+- GSAP for advanced animations where appropriate.
+- GSAP ScrollTrigger for scroll-based effects.
+- Framer Motion for suitable component transitions.
+- Next.js Image for optimized image rendering.
+
+IMPLEMENTATION RULES:
+
+- Use reusable React components.
+- Separate each major homepage section into an individual component.
+- Create reusable service cards.
+- Create reusable testimonial components.
+- Create reusable FAQ components.
+- Create reusable buttons.
+- Create reusable booking form components.
+- Use centralized service data.
+- Use clean component architecture.
+- Avoid unnecessary dependencies.
+- Avoid duplicated code.
+- Use semantic HTML.
+- Use client components only where necessary.
+- Ensure animations are properly initialized and cleaned up.
+
+Use JSX rather than TypeScript unless the existing project explicitly requires TypeScript.
+
+If working inside an existing project, inspect its architecture first and preserve the working configuration.
+
+====================================================
+
+# 3. COMPLETE DESIGN SYSTEM EXTRACTION
+
+====================================================
+
+Extract and reproduce the visual design system of the actual NAILA website.
+
+## COLOR PALETTE
+
+The NAILA brand uses a warm, understated, sophisticated beauty aesthetic.
+
+Its visual identity is built around creamy neutrals, warm whites, soft beige, subtle blush tones, muted taupe, and dark charcoal typography.
+
+Use the following estimated colors:
+
+| Color | Hex Code | Usage |
+|---|---|---|
+| Warm Ivory | #F8F5F0 | Main background |
+| Soft Cream | #F3EEE7 | Alternate section backgrounds |
+| Pure Warm White | #FFFFFF | Cards and image backgrounds |
+| Pale Beige | #E9DED2 | Secondary surfaces |
+| Champagne Beige | #DCC9B8 | Subtle accents |
+| Soft Blush | #EBD8D1 | Beauty-related accents |
+| Warm Taupe | #A89585 | Secondary labels and details |
+| Muted Brown | #857467 | Supporting typography |
+| Charcoal | #292623 | Main headings and dark text |
+| Soft Gray | #77716B | Body text |
+| Light Border | #E9E3DC | Dividers and card borders |
+
+COLOR RULES:
+
+- Warm ivory and cream must dominate the website.
+- Headings should use deep charcoal.
+- Body text should use muted warm gray.
+- Beige and blush should be used sparingly.
+- White should create visual breathing room.
+- Avoid saturated colors.
+- Avoid bright pink.
+- Avoid neon colors.
+- Avoid excessive gold.
+- Avoid pure black as the dominant background.
+
+The overall result must remain warm, light, calm, and sophisticated.
+
+## TYPOGRAPHY
+
+The reference uses elegant, modern typography with a balance between refined display headings and highly readable supporting text.
+
+Recommended font direction:
+
+- Headings: Cormorant Garamond, DM Serif Display, or a similar elegant editorial serif if the live reference confirms a serif treatment.
+- Supporting typography: Inter, Manrope, or a clean modern sans-serif.
+- Use the actual reference font if it can be identified from the source.
+
+Typography hierarchy:
+
+H1 — Hero Heading:
+
+Text:
+Nails, made personal.
+
+- Elegant display typography.
+- Desktop size approximately 58–76px, subject to matching the live reference.
+- Regular or medium weight.
+- Refined line height.
+- Natural letter spacing.
+- Charcoal color.
+
+H2 — Section Headings:
+
+Examples:
+What we do.
+Find your next inspiration.
+A different kind of nail experience.
+A little love for your next visit.
+Before your appointment.
+Ready for your next set?
+
+- Desktop size approximately 40–54px.
+- Elegant, refined typography.
+- Regular or medium weight.
+- Natural letter spacing.
+- Strong visual hierarchy without excessive boldness.
+
+H3 — Service Titles:
+
+- Approximately 20–26px.
+- Medium weight.
+- Clear and elegant.
+
+Body Text:
+
+- Approximately 14–16px.
+- Regular weight.
+- Line height 1.5–1.75.
+- Muted warm gray.
+
+Navigation:
+
+- Approximately 12–14px.
+- Medium weight.
+- Minimalist styling.
+
+Buttons:
+
+- Approximately 12–14px.
+- Medium weight.
+- Compact.
+- Refined text treatment.
+
+Small Section Labels:
+
+Examples:
+PREMIUM NAIL STUDIO
+OUR SERVICES
+OUR WORKS
+WHY CHOOSE US
+CLIENT STORIES
+A FEW GOOD QUESTIONS
+BOOK TODAY
+
+- Small uppercase lettering.
+- Subtle tracking.
+- Muted or dark neutral colors.
+- Clear separation from main headings.
+
+IMPORTANT:
+
+Do not use extremely bold typography throughout.
+
+The reference relies on visual restraint, elegant headings, and a carefully controlled hierarchy.
+
+====================================================
+
+# 4. SPACING AND GRID SYSTEM
+
+====================================================
+
+The website uses generous whitespace and a structured editorial layout.
+
+Avoid unnecessarily dense content.
+
+## MAIN CONTAINER
+
+- Maximum content width: approximately 1200–1280px.
+- Desktop horizontal padding: 48–64px.
+- Tablet horizontal padding: 28–36px.
+- Mobile horizontal padding: 18–24px.
+
+## HEADER
+
+- Compact horizontal navigation.
+- Approximately 64–80px high, depending on the reference viewport.
+- Logo on the left.
+- Navigation links arranged horizontally.
+- Booking action accessible without overwhelming the header.
+
+## HERO
+
+- Wide photographic composition.
+- Large negative space.
+- Left-aligned text.
+- Image and text balanced naturally.
+- Generous vertical padding.
+
+## SERVICES
+
+- Structured six-card grid.
+- Three columns on desktop where appropriate.
+- Consistent image dimensions.
+- Consistent card spacing.
+- Comfortable text padding.
+
+## PORTFOLIO
+
+- Editorial photographic gallery.
+- Asymmetrical or carefully arranged image grid.
+- Consistent gaps.
+- Avoid ordinary product-card styling.
+
+## WHY CHOOSE US
+
+- Alternating image and text compositions.
+- Strong whitespace.
+- Balanced text widths.
+- Carefully aligned images.
+
+## TESTIMONIALS
+
+- Multiple testimonial blocks.
+- Comfortable internal spacing.
+- Clear separation between quote, portrait, and client information.
+
+## FAQ
+
+- Minimalist accordion layout.
+- Thin dividers.
+- Generous vertical spacing.
+
+## FINAL CTA
+
+- Wide photographic background or image-led composition.
+- Large heading.
+- Supporting text.
+- Prominent booking action.
+
+## CORNER RADII
+
+Maintain understated styling.
+
+- Buttons: 5–10px.
+- Images: use the subtle radius visible in the reference.
+- Cards: approximately 8–14px where applicable.
+- Inputs: 6–9px.
+
+Do not introduce excessive pill-shaped components.
+
+====================================================
+
+# 5. HEADER AND NAVIGATION
+
+====================================================
+
+Recreate the NAILA navigation exactly.
+
+LEFT:
+
+NAILA brand logo.
+
+- Minimalist wordmark.
+- Elegant typography.
+- Preserve the original proportions and spacing.
+- Do not create an elaborate symbol if the reference uses a simple wordmark.
+
+NAVIGATION:
+
+- Naila.
+- Services.
+- Our works.
+- About.
+
+The navigation should remain clean and understated.
+
+RIGHT:
+
+Book a visit / Book Appointment action.
+
+DESIGN:
+
+- Warm light background.
+- Dark neutral text.
+- Subtle active states.
+- Minimal spacing.
+- No heavy borders.
+- No oversized buttons.
+
+INTERACTIONS:
+
+- Logo navigates home.
+- Services scrolls to the service section or opens the service page.
+- Our works navigates to the portfolio.
+- About navigates to the about section/page.
+- Book a visit opens the appointment booking experience.
+
+HOVER:
+
+- Subtle color change.
+- Gentle underline or opacity transition.
+- Smooth transitions.
+
+MOBILE:
+
+- Brand logo remains visible.
+- Navigation collapses into a hamburger menu.
+- Booking CTA remains accessible.
+- Mobile navigation uses a clean dropdown or slide-in panel.
+- Close menu after navigation.
+- Prevent background scrolling while the menu is open.
+
+====================================================
+
+# 6. HOMEPAGE — COMPLETE SECTION-BY-SECTION RECREATION
+
+====================================================
+
+Recreate the entire homepage in the exact order of the reference.
+
+Do not omit any section.
+
+## SECTION 01 — HERO
+
+This is the first visual experience.
+
+The hero must communicate a premium, calm, personal nail studio.
+
+SMALL LABEL:
+
+PREMIUM NAIL STUDIO
+
+MAIN HEADING:
+
+Nails, made personal.
+
+SUPPORTING DESCRIPTION:
+
+"Tailored nail care, refined techniques, and a calm space just for you."
+
+PRIMARY CTA:
+
+Book Appointment
+
+SECONDARY CTA:
+
+Our Services
+
+SMALL BRAND STATEMENT:
+
+"Thoughtful care · Refined finishes · Your style"
+
+## HERO IMAGE
+
+The reference uses a wide, warm, editorial nail photograph.
+
+The image features:
+
+- Beautifully manicured hands.
+- Natural-looking nail shapes.
+- Soft nude and pink polish.
+- Delicate nail art.
+- Warm neutral fabrics.
+- Soft cream backgrounds.
+- Natural, diffused lighting.
+- Premium beauty photography.
+
+IMAGE COMPOSITION:
+
+- Wide horizontal photograph.
+- Hands positioned toward the right or center as appropriate.
+- Generous negative space.
+- Warm, creamy color grading.
+- Soft shadows.
+- No harsh lighting.
+- No excessive saturation.
+
+The image must feel calm and luxurious.
+
+Do not replace this composition with a generic nail salon interior photograph.
+
+LAYOUT:
+
+- Text and photograph must maintain the reference's relationship.
+- Large heading.
+- Short description.
+- Two CTA actions.
+- Small supporting brand statement.
+- Balanced white space.
+
+INTERACTIONS:
+
+- Book Appointment opens the booking experience.
+- Our Services scrolls to the services section.
+- Hero content reveals subtly.
+- Image may receive a gentle fade or scale reveal.
+- Avoid dramatic parallax.
+
+====================================================
+
+# 7. SECTION 02 — OUR SERVICES
+
+====================================================
+
+SECTION LABEL:
+
+OUR SERVICES
+
+MAIN HEADING:
+
+What we do.
+
+DESCRIPTION:
+
+"Six ways to care for your nails, each tailored to you."
+
+Create six individual service cards.
+
+SERVICE 01 — MANICURE
+
+Description:
+
+"Clean, shape, and perfect your natural nails."
+
+CTA:
+
+Explore service →
+
+IMAGE:
+
+Natural manicured hands with clean, elegant nail finishes.
+
+SERVICE 02 — PEDICURE
+
+Description:
+
+"Relaxing care for beautifully finished feet."
+
+CTA:
+
+Explore service →
+
+IMAGE:
+
+Premium pedicure experience with soft, clean styling.
+
+SERVICE 03 — GEL POLISH
+
+Description:
+
+"A smooth, glossy colour finish for your natural nails."
+
+CTA:
+
+Explore service →
+
+IMAGE:
+
+Beautiful glossy gel nails in elegant neutral or muted colors.
+
+SERVICE 04 — NAIL ART
+
+Description:
+
+"Personal details, from delicate accents to statement designs."
+
+CTA:
+
+Explore service →
+
+IMAGE:
+
+Detailed nail art, fine lines, delicate accents, and artistic finishes.
+
+SERVICE 05 — NAIL EXTENSIONS
+
+Description:
+
+"Added length and a balanced shape, tailored to your hands."
+
+CTA:
+
+Explore service →
+
+IMAGE:
+
+Elegant nail extensions with refined shapes.
+
+SERVICE 06 — REMOVAL & CARE
+
+Description:
+
+"Careful product removal and a fresh start for natural nails."
+
+CTA:
+
+Explore service →
+
+IMAGE:
+
+Professional nail care and removal tools.
+
+## CARD DESIGN
+
+- Warm neutral backgrounds.
+- Premium nail photography.
+- Refined service titles.
+- Short descriptions.
+- Minimal text links.
+- Consistent spacing.
+- Subtle borders or shadows only if present in the reference.
+
+Use a three-column desktop layout where it matches the original.
+
+On smaller screens, reorganize into two columns or one column as appropriate.
+
+INTERACTIONS:
+
+- Entire card may link to its service detail page.
+- Explore service link navigates to the relevant service.
+- Image hover receives a very subtle zoom.
+- Text link changes opacity or color.
+- Keep transitions elegant and restrained.
+
+====================================================
+
+# 8. SECTION 03 — OUR WORKS / NAIL ART PORTFOLIO
+
+====================================================
+
+SECTION LABEL:
+
+OUR WORKS
+
+MAIN HEADING:
+
+Find your next inspiration.
+
+DESCRIPTION:
+
+"A collection of colour, texture, and carefully finished details."
+
+This section is an image-led editorial portfolio.
+
+IMPORTANT:
+
+Do not turn this section into ordinary product cards.
+
+The photography is the main visual element.
+
+## GALLERY
+
+Recreate the multi-image gallery from the reference.
+
+Use approximately 12 distinct images.
+
+The images should feature:
+
+- Nude manicures.
+- French tips.
+- Glossy pink nails.
+- Minimal nail art.
+- Floral nail details.
+- Natural nail finishes.
+- Elegant extensions.
+- Neutral nail colors.
+- Delicate textures.
+- Close-up nail photography.
+
+## GALLERY DESIGN
+
+- Carefully arranged grid.
+- Editorial composition.
+- Consistent image quality.
+- Natural variation in image dimensions where appropriate.
+- Clean spacing.
+- Warm neutral color grading.
+- Minimal or no text overlays.
+
+Do not use unrelated salon interior photographs in place of nail-art photography.
+
+## INTERACTIONS
+
+- Images reveal subtly on scroll.
+- Gentle hover scale.
+- Clicking an image opens a larger lightbox.
+- Include next and previous navigation.
+- Include close control.
+- Support keyboard navigation.
+- Preserve original image aspect ratios.
+
+The gallery should feel like a premium beauty editorial portfolio.
+
+====================================================
+
+# 9. SECTION 04 — WHY CHOOSE US
+
+====================================================
+
+SECTION LABEL:
+
+WHY CHOOSE US
+
+MAIN HEADING:
+
+A different kind of nail experience.
+
+Create three carefully arranged content blocks.
+
+## BLOCK 01 — SKILLED TECHNICIANS
+
+Description:
+
+"We start with the length, shape, and finish you want. Your technician takes time over the details, from preparing the nail to checking the final edges."
+
+Supporting points:
+
+- Shape and length suited to your routine.
+- Careful nail and cuticle preparation.
+- An even finish with tidy edges.
+
+IMAGE:
+
+A nail technician carefully painting a client's nails.
+
+## BLOCK 02 — PREMIUM MATERIALS
+
+Description:
+
+"We choose products to suit the service and the look you want. A sheer wash of colour, a glossy gel finish, and detailed nail art each call for a different approach."
+
+Supporting points:
+
+- Sheer and opaque colour options.
+- Polish and gel suited to your service.
+- Finishes from soft shine to shimmer.
+
+IMAGE:
+
+Premium manicure products, polish, and nail-care tools arranged elegantly.
+
+## BLOCK 03 — CALM & CLEAN SPACE
+
+Description:
+
+"Take a moment to settle in, look through colours, and talk through your ideas. The studio is set up to give you a comfortable place to sit and time to make your choices."
+
+Supporting points:
+
+- A tidy station for your appointment.
+- Comfortable seating for hand and foot care.
+- Time to browse colours and discuss your design.
+
+IMAGE:
+
+A clean pedicure station with a premium foot bath and comfortable seating.
+
+## DESIGN
+
+Use the alternating text-and-image composition from the reference.
+
+- Generous spacing.
+- Elegant typography.
+- Soft neutral background.
+- Large editorial photographs.
+- Carefully aligned content.
+- Simple bullet styling.
+
+Do not turn this section into three generic icon cards.
+
+Photography and editorial text placement are essential.
+
+====================================================
+
+# 10. SECTION 05 — CLIENT STORIES / TESTIMONIALS
+
+====================================================
+
+SECTION LABEL:
+
+CLIENT STORIES
+
+MAIN HEADING:
+
+A little love for your next visit.
+
+Create a premium testimonial section.
+
+The reference features multiple client testimonials with small portrait photographs and location information.
+
+Include:
+
+- Client quotation.
+- Client portrait.
+- Client name.
+- Client location.
+
+The reference includes sample testimonials for layout preview.
+
+Use sample content only during development.
+
+IMPORTANT:
+
+Do not represent invented customer testimonials as verified reviews.
+
+Replace demonstration content with approved customer testimonials before launch.
+
+## DESIGN
+
+- Warm neutral background.
+- Minimalist testimonial layout.
+- Elegant quote typography.
+- Small portrait images.
+- Subtle dividers or spacing.
+- No heavy colored testimonial boxes.
+
+## INTERACTIONS
+
+- Subtle fade-in.
+- Optional restrained carousel behavior if needed on mobile.
+- Accessible previous and next controls if a carousel is implemented.
+
+Do not introduce distracting autoplay.
+
+====================================================
+
+# 11. SECTION 06 — FAQ
+
+====================================================
+
+SECTION LABEL:
+
+A FEW GOOD QUESTIONS
+
+MAIN HEADING:
+
+Before your appointment.
+
+Create a minimalist accordion FAQ.
+
+QUESTIONS:
+
+01. Which nail service should I book?
+
+Answer:
+
+"Start with the finish you want: natural care, gel colour, detailed nail art, or added length. Share a reference when you enquire and we can help you choose."
+
+02. Can I send a nail design reference before my appointment?
+
+Explain how clients can share their preferred nail design or inspiration before booking.
+
+03. Should I arrange removal if I already have gel or extensions?
+
+Explain that existing products should be mentioned when enquiring so the studio can plan the appropriate service.
+
+04. How do I care for my nails after my appointment?
+
+Provide appropriate aftercare information.
+
+05. What should I do if I need to reschedule or cancel?
+
+Explain how clients should contact the studio regarding appointment changes.
+
+Do not invent a specific cancellation policy.
+
+## DESIGN
+
+- Minimalist accordion.
+- Thin horizontal dividers.
+- Dark charcoal question text.
+- Subtle expand/collapse icons.
+- Generous vertical spacing.
+- Warm neutral background.
+
+## FUNCTIONALITY
+
+- Click question to expand.
+- Click again to collapse.
+- Smooth height transition.
+- Keyboard accessible.
+- Accessible expanded/collapsed state.
+
+====================================================
+
+# 12. SECTION 07 — FINAL APPOINTMENT CTA
+
+====================================================
+
+This is the final major conversion section.
+
+SMALL LABEL:
+
+BOOK TODAY
+
+MAIN HEADING:
+
+Ready for your next set?
+
+DESCRIPTION:
+
+"Choose your service and share your preferred time with the studio."
+
+CTA:
+
+Book Appointment
+
+## IMAGE
+
+Use a premium nail-care photograph consistent with the reference.
+
+The image should feature:
+
+- Beautifully finished nails.
+- Soft natural lighting.
+- Warm neutral styling.
+- Elegant nail colors.
+- Refined beauty composition.
+
+## DESIGN
+
+- Large photographic area.
+- Warm, calm atmosphere.
+- Strong heading hierarchy.
+- Clear booking action.
+- Generous spacing.
+
+## FUNCTIONALITY
+
+The booking CTA must open the actual appointment-booking interface.
+
+Do not leave the button as a decorative element.
+
+====================================================
+
+# 13. FOOTER
+
+====================================================
+
+Recreate the minimal NAILA footer.
+
+LEFT:
+
+NAILA logo/wordmark.
+
+Brand description:
+
+"A calm, modern nail studio where beauty meets relaxation, offering thoughtfully crafted nail care and elegant designs to complement your unique style."
+
+NAVIGATION:
+
+- Services.
+- Our works.
+- About.
+
+BOOKING:
+
+Book a visit.
+
+BOTTOM:
+
+"© 2026 Naila. All rights reserved."
+
+## DESIGN
+
+- Warm neutral background.
+- Minimalist typography.
+- Clear spacing.
+- Small text.
+- No unnecessary decorative elements.
+
+Maintain the understated character of the reference.
+
+====================================================
+
+# 14. ADDITIONAL WEBSITE PAGES
+
+====================================================
+
+IMPORTANT:
+
+Do not put everything into the homepage.
+
+Create a complete multi-page nail studio website.
+
+Maintain the exact NAILA design system throughout every page.
+
+REQUIRED ROUTES:
+
+/
+ /services
+ /services/manicure
+ /services/pedicure
+ /services/gel-polish
+ /services/nail-art
+ /services/nail-extensions
+ /services/removal-care
+ /works
+ /about
+ /book-appointment
+ /contact
+ /faq
+ /privacy-policy
+ /terms
+ /404
+
+## PAGE 01 — SERVICES
+
+Create a dedicated services page.
+
+Include:
+
+- Premium introduction.
+- All six nail services.
+- Individual service photographs.
+- Service descriptions.
+- Explore service actions.
+- Appointment booking CTA.
+
+## PAGE 02 — INDIVIDUAL SERVICE PAGES
+
+Create individual pages for all six services.
+
+Each page should contain:
+
+- Service-specific hero image.
+- Service title.
+- Description.
+- What is included.
+- Appointment process.
+- Recommended nail finishes.
+- Aftercare guidance.
+- Related services.
+- Booking CTA.
+
+The Manicure page should retain the reference's content structure:
+
+- A polished everyday essential.
+- Your appointment.
+- Keeping your nails cared for.
+
+Create similarly appropriate structures for the other services.
+
+Do not invent service durations or prices.
+
+## PAGE 03 — OUR WORKS
+
+Create a dedicated nail-art portfolio.
+
+Include:
+
+- Large editorial gallery.
+- Different nail designs.
+- Image categories.
+- Image lightbox.
+- Gallery filtering where appropriate.
+- Book Appointment CTA.
+
+## PAGE 04 — ABOUT
+
+Include:
+
+- About NAILA.
+- Studio philosophy.
+- Personal nail-care approach.
+- Skilled technicians.
+- Premium materials.
+- Calm and clean environment.
+- Studio photography.
+- Booking CTA.
+
+Maintain the original warm, minimalist aesthetic.
+
+## PAGE 05 — BOOK APPOINTMENT
+
+This is one of the most important functional pages.
+
+Create a premium appointment booking experience.
+
+FORM FIELDS:
+
+01. Full Name.
+
+02. Email Address.
+
+03. Phone Number.
+
+04. Select Service.
+
+Options:
+
+- Manicure.
+- Pedicure.
+- Gel Polish.
+- Nail Art.
+- Nail Extensions.
+- Removal & Care.
+
+05. Preferred Date.
+
+06. Preferred Time.
+
+07. Preferred Nail Shape or Style.
+
+08. Additional Notes.
+
+09. Optional Nail Inspiration Image Upload.
+
+CTA:
+
+REQUEST APPOINTMENT.
+
+FUNCTIONALITY:
+
+- Required field validation.
+- Email validation.
+- Date validation.
+- Service selection.
+- File upload validation.
+- Loading state.
+- Success message.
+- Error handling.
+
+Where a booking backend is available, connect the form to it.
+
+If no booking backend exists, create a clear demonstration flow and do not falsely claim that appointments have been confirmed.
+
+## PAGE 06 — CONTACT
+
+Include:
+
+- Contact introduction.
+- Contact information.
+- Phone.
+- Email.
+- Studio location.
+- Opening hours.
+- Contact form.
+- Booking CTA.
+
+Use editable business information.
+
+Do not fabricate a physical address.
+
+## PAGE 07 — FAQ
+
+Create a full FAQ page with categorized questions.
+
+Categories:
+
+- Services.
+- Booking.
+- Nail Preparation.
+- Aftercare.
+- Rescheduling.
+- General Questions.
+
+## PAGE 08 — LEGAL PAGES
+
+Create:
+
+- Privacy Policy.
+- Terms and Conditions.
+
+Use appropriate editable legal content.
+
+====================================================
+
+# 15. IMAGE REQUIREMENTS
+
+====================================================
+
+THIS IS CRITICAL.
+
+The NAILA website depends heavily on beautiful, premium nail photography.
+
+Do NOT create blank gray boxes.
+
+Do NOT use "image here".
+
+Do NOT leave missing image placeholders.
+
+Do NOT use generic beauty stock photography that does not match the reference.
+
+Every image must match the subject, composition, lighting, and warm color grading of the original website.
+
+## REQUIRED IMAGE ASSETS
+
+01. HERO IMAGE
+
+Wide editorial photograph of elegant manicured hands with nude pink polish and delicate floral nail art.
+
+02. MANICURE
+
+Natural, carefully shaped nails with a clean polished finish.
+
+03. PEDICURE
+
+Premium pedicure experience with a soft, elegant composition.
+
+04. GEL POLISH
+
+Glossy gel manicure with refined colors.
+
+05. NAIL ART
+
+Delicate nail art, fine detailing, and artistic nail designs.
+
+06. NAIL EXTENSIONS
+
+Elegant nail extensions with refined shapes and finishes.
+
+07. REMOVAL & CARE
+
+Professional nail-care tools and natural nail preparation.
+
+08. PORTFOLIO GALLERY
+
+At least 12 different high-quality nail-art photographs.
+
+09. SKILLED TECHNICIANS
+
+Close-up of a technician painting a client's nails.
+
+10. PREMIUM MATERIALS
+
+Premium nail products, polish bottles, and manicure tools.
+
+11. CALM & CLEAN SPACE
+
+Clean, beautiful pedicure station and studio interior.
+
+12. TESTIMONIAL PORTRAITS
+
+Appropriate client portrait images, clearly treated as illustrative until real approved portraits are available.
+
+13. FINAL CTA
+
+Premium nail photography consistent with the hero and portfolio.
+
+## IMAGE SOURCING
+
+Use:
+
+- Unsplash.
+- Pexels.
+- Properly licensed beauty photography.
+- Appropriate royalty-free image libraries.
+- Original approved studio photographs where available.
+
+Use real nail photography rather than generic beauty illustrations.
+
+Do not reuse the same image across unrelated service cards.
+
+## IMAGE COMPOSITION
+
+Images should feature:
+
+- Soft natural light.
+- Warm beige tones.
+- Creamy backgrounds.
+- Nude and blush polish.
+- Clean manicures.
+- Refined details.
+- Premium beauty-editorial photography.
+- Minimal backgrounds.
+
+Avoid:
+
+- Harsh flash.
+- Overly saturated colors.
+- Cheap-looking stock images.
+- Unrelated makeup photographs.
+- Excessively busy backgrounds.
+- Watermarks.
+
+## IMAGE IMPLEMENTATION
+
+- Use Next.js Image.
+- Correct aspect ratios.
+- object-fit: cover.
+- Proper responsive sizing.
+- Lazy loading for below-the-fold images.
+- Priority loading for the hero.
+- Descriptive alt text.
+- Appropriate fallback behavior.
+- Prevent layout shifts.
+
+====================================================
+
+# 16. ANIMATION AND TRANSITION SYSTEM
+
+====================================================
+
+Use GSAP and Framer Motion selectively.
+
+The reference is calm and minimalist.
+
+Therefore, animations must be subtle, elegant, and refined.
+
+Do not introduce aggressive animation.
+
+## HERO ANIMATIONS
+
+- Hero image fades in.
+- Main heading appears with a subtle upward reveal.
+- Supporting text fades in.
+- CTA buttons appear sequentially.
+- Small brand statement appears last.
+
+## SERVICE CARD ANIMATIONS
+
+- Cards reveal on scroll.
+- Images receive a gentle hover zoom.
+- Service links transition smoothly.
+- Avoid large card lifts or dramatic shadows.
+
+## PORTFOLIO ANIMATIONS
+
+- Images reveal using subtle opacity and vertical movement.
+- Stagger gallery entrances.
+- Hover scale remains restrained.
+- Lightbox opens and closes smoothly.
+
+## WHY CHOOSE US
+
+- Alternate text and image reveal.
+- Images fade in naturally.
+- Text appears with subtle staggered movement.
+
+## TESTIMONIALS
+
+- Gentle entrance animation.
+- Smooth carousel transitions if applicable.
+
+## FAQ
+
+- Smooth accordion expansion.
+- Subtle icon rotation.
+- No unnecessary bouncing.
+
+## FINAL CTA
+
+- Background image fades in.
+- Heading and CTA appear sequentially.
+
+## NAVIGATION
+
+- Subtle hover transitions.
+- Smooth active link state.
+- Smooth mobile navigation.
+
+## BUTTONS
+
+Primary buttons:
+- Subtle background color transition.
+- Very slight scale on hover.
+
+Secondary buttons:
+- Subtle border and text transition.
+
+Recommended transition duration:
+
+250–450ms.
+
+IMPORTANT:
+
+- Avoid excessive parallax.
+- Avoid aggressive scroll animations.
+- Respect prefers-reduced-motion.
+- Prevent animation flickering.
+- Clean up GSAP contexts.
+- Ensure mobile performance.
+- Preserve the calm atmosphere.
+
+====================================================
+
+# 17. RESPONSIVE DESIGN
+
+====================================================
+
+Test these exact viewport widths:
+
+1440px
+1280px
+1024px
+768px
+430px
+390px
+360px
+
+## DESKTOP
+
+- Full horizontal navigation.
+- Balanced hero composition.
+- Wide service grid.
+- Editorial image gallery.
+- Alternating Why Choose Us layout.
+- Spacious testimonials.
+- Minimal FAQ.
+- Wide booking CTA.
+
+## TABLET — 768px TO 1024px
+
+- Navigation adapts to available space.
+- Hero typography scales proportionally.
+- Services use two columns.
+- Gallery adapts to a smaller editorial grid.
+- Why Choose Us blocks remain readable.
+- Testimonials stack or use a restrained carousel.
+- Footer reorganizes appropriately.
+
+## MOBILE — BELOW 768px
+
+HEADER:
+- Compact logo.
+- Hamburger navigation.
+- Accessible booking CTA.
+
+HERO:
+- Text and image stack appropriately.
+- Maintain the original image composition.
+- Reduce heading size.
+- Keep buttons accessible.
+
+SERVICES:
+- Two columns on wider mobile screens.
+- One column on narrow screens if necessary.
+
+PORTFOLIO:
+- Two-column or single-column gallery depending on viewport.
+- Preserve image proportions.
+- Avoid excessively small images.
+
+WHY CHOOSE US:
+- Stack image and text.
+- Preserve alternating content rhythm where practical.
+
+TESTIMONIALS:
+- One testimonial visible at a time if using a carousel.
+- Keep controls accessible.
+
+FAQ:
+- Full-width accordion.
+- Comfortable touch targets.
+
+FINAL CTA:
+- Stack image and text.
+- Make booking button prominent.
+
+STRICT RULES:
+
+NO:
+
+- Horizontal scrolling.
+- Overlapping text.
+- Cut-off buttons.
+- Distorted images.
+- Broken grids.
+- Navigation overflow.
+- Unreadable typography.
+- Excessive whitespace that breaks the composition.
+- Oversized mobile headings.
+
+Mobile must feel intentionally designed, not simply shrunk.
+
+====================================================
+
+# 18. FUNCTIONAL REQUIREMENTS
+
+====================================================
+
+Every visible interactive element must work.
+
+Implement:
+
+- Navigation.
+- Service navigation.
+- Portfolio gallery.
+- Image lightbox.
+- FAQ accordion.
+- Appointment booking.
+- Contact form.
+- Date selection.
+- Service selection.
+- Image upload for inspiration.
+- Mobile menu.
+- Footer navigation.
+
+Use centralized data for:
+
+- Services.
+- Service descriptions.
+- Service photographs.
+- Portfolio images.
+- FAQs.
+- Contact details.
+- Booking information.
+
+Ensure the appointment experience is the main conversion path.
+
+Where a real backend is not configured, implement a frontend-ready structure with clear demonstration states.
+
+Do not fabricate booking confirmations.
+
+====================================================
+
+# 19. SEO REQUIREMENTS
+
+====================================================
+
+Implement:
+
+- Unique page titles.
+- Meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- Twitter Cards.
+- robots.txt.
+- sitemap.xml.
+- Structured data using JSON-LD.
+
+Use suitable structured data:
+
+- BeautySalon.
+- LocalBusiness.
+- Service.
+- Organization.
+- BreadcrumbList.
+
+Use relevant search terms naturally:
+
+- Nail studio.
+- Premium nail care.
+- Manicure.
+- Pedicure.
+- Gel polish.
+- Nail art.
+- Nail extensions.
+- Nail care.
+- Nail appointment.
+
+Do not invent studio addresses, ratings, or opening hours.
+
+====================================================
+
+# 20. ACCESSIBILITY
+
+====================================================
+
+Use:
+
+- Semantic HTML.
+- Descriptive alt text.
+- Keyboard navigation.
+- Visible focus states.
+- ARIA labels where necessary.
+- Correct heading hierarchy.
+- Accessible booking forms.
+- Accessible accordion controls.
+- Accessible image lightbox.
+- Proper form labels.
+- Good color contrast.
+- Reduced-motion support.
+
+Ensure all interactive elements are keyboard accessible.
+
+====================================================
+
+# 21. PERFORMANCE OPTIMIZATION
+
+====================================================
+
+Target Lighthouse 90+ where technically achievable.
+
+Optimize:
+
+- Image loading.
+- Image compression.
+- Font loading.
+- JavaScript bundles.
+- Component rendering.
+- Gallery performance.
+- Animation performance.
+- Layout shifts.
+
+Use:
+
+- Next.js Image.
+- Appropriate image formats.
+- Lazy loading.
+- Priority loading for hero.
+- Dynamic imports where beneficial.
+- Efficient component architecture.
+
+Ensure the website performs smoothly on mobile networks.
+
+====================================================
+
+# 22. STRICT VISUAL QUALITY ASSURANCE
+
+====================================================
+
+THIS SECTION IS MANDATORY.
+
+After implementation, compare the recreated website directly against:
+
+https://naila.framer.media/
+
+Perform a complete visual audit from TOP TO BOTTOM.
+
+HEADER:
+- Logo.
+- Navigation spacing.
+- Typography.
+- Booking action.
+- Header height.
+
+HERO:
+- Image composition.
+- Heading typography.
+- Text positioning.
+- Supporting copy.
+- CTA dimensions.
+- Negative space.
+- Image proportions.
+
+SERVICES:
+- Six service cards.
+- Image dimensions.
+- Card spacing.
+- Titles.
+- Descriptions.
+- Links.
+
+PORTFOLIO:
+- Image quantity.
+- Image proportions.
+- Gallery composition.
+- Spacing.
+- Image quality.
+
+WHY CHOOSE US:
+- Three content blocks.
+- Alternating composition.
+- Photography.
+- Typography.
+- Bullet alignment.
+
+TESTIMONIALS:
+- Quote styling.
+- Portrait sizes.
+- Text alignment.
+- Section spacing.
+
+FAQ:
+- Accordion layout.
+- Dividers.
+- Typography.
+- Interaction.
+
+FINAL CTA:
+- Image.
+- Heading.
+- Description.
+- Booking button.
+
+FOOTER:
+- Brand description.
+- Navigation.
+- Booking link.
+- Copyright.
+
+RESPONSIVE:
+- Every specified viewport.
+- Navigation.
+- Image cropping.
+- Card stacking.
+- Typography.
+- Booking forms.
+
+ANIMATIONS:
+- Timing.
+- Easing.
+- Hover states.
+- Scroll reveals.
+- Mobile performance.
+
+If any element looks generic, incomplete, visually weak, incorrectly spaced, or significantly different from the original reference:
+
+FIX IT AUTOMATICALLY.
+
+Do not ask the user to manually fix obvious visual problems.
+
+====================================================
+
+# 23. FINAL IMPLEMENTATION REQUIREMENTS
+
+====================================================
+
+The finished project must include:
+
+- Complete NAILA homepage.
+- All original homepage sections.
+- Six individual service offerings.
+- Individual service detail pages.
+- Dedicated portfolio.
+- About page.
+- Booking page.
+- Contact page.
+- FAQ page.
+- Functional booking interface.
+- Responsive navigation.
+- Reusable components.
+- High-quality nail photography.
+- Editorial gallery.
+- Smooth animations.
+- SEO.
+- Accessibility.
+- Performance optimization.
+
+The homepage must preserve the original NAILA aesthetic.
+
+All secondary pages must use the same design system.
+
+====================================================
+
+# FINAL NON-NEGOTIABLE INSTRUCTIONS
+
+====================================================
+
+THE LIVE NAILA WEBSITE IS THE SINGLE SOURCE OF VISUAL TRUTH.
+
+DO NOT:
+
+- Create only the hero section.
+- Create only the first visible screen.
+- Build a generic nail salon template.
+- Remove any original homepage section.
+- Replace the warm neutral color palette.
+- Use unrelated typography.
+- Use generic beauty stock photography.
+- Reuse one image throughout the website.
+- Leave empty image placeholders.
+- Leave unfinished pages.
+- Create non-functional booking buttons.
+- Create decorative forms that do nothing.
+- Ignore responsive layouts.
+- Introduce excessive animations.
+- Overcomplicate the minimalist design.
+- Stop after producing a rough implementation.
+
+I WANT THE COMPLETE NAILA PREMIUM NAIL STUDIO WEBSITE.
+
+Recreate the original website with exceptional accuracy.
+
+Build the complete homepage, all six services, the portfolio, the Why Choose Us section, testimonials, FAQ, appointment booking, contact page, and all required secondary pages.
+
+Use premium nail photography, elegant typography, refined spacing, subtle animations, and fully functional interactions.
+
+PRIORITY ORDER:
+
+1. Pixel-perfect fidelity to the actual NAILA website.
+2. Accurate warm neutral design system.
+3. Correct hero image and typography.
+4. Accurate six-service section.
+5. Editorial nail-art portfolio.
+6. Three-part Why Choose Us section.
+7. Testimonials and FAQ.
+8. Appointment booking functionality.
+9. Complete secondary pages.
+10. Responsive layouts.
+11. Subtle animation quality.
+12. Accessibility, SEO, and performance.
+
+DO NOT COMPROMISE THE ORIGINAL DESIGN FOR YOUR OWN CREATIVE INTERPRETATION.
+
+BUILD THE COMPLETE NAILA WEBSITE NOW.
